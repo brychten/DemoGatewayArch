@@ -727,6 +727,25 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Steeltoe.Discovery.Eureka/3.2.7": {
+        "type": "package",
+        "dependencies": {
+          "Steeltoe.Common.Http": "3.2.7",
+          "Steeltoe.Connector.Abstractions": "3.2.7",
+          "Steeltoe.Discovery.ClientBase": "3.2.7",
+          "System.Net.Http.Json": "3.2.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Steeltoe.Discovery.Eureka.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Discovery.Eureka.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Steeltoe.Extensions.Configuration.Abstractions/3.2.7": {
         "type": "package",
         "dependencies": {
@@ -851,6 +870,22 @@
           "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll": {
             "assetType": "runtime",
             "rid": "win"
+          }
+        }
+      },
+      "System.Net.Http.Json/3.2.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "4.7.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Net.Http.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Net.Http.Json.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -1907,6 +1942,20 @@
         "steeltoe.discovery.clientcore.nuspec"
       ]
     },
+    "Steeltoe.Discovery.Eureka/3.2.7": {
+      "sha512": "MyEw7E6rsK5zshnTQbf3kF+1ZuDFIBlxYDR6vnCz73v/PpGerrypHp59oPS86yxNTRBTndybW5gPQVsHb8+www==",
+      "type": "package",
+      "path": "steeltoe.discovery.eureka/3.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/Steeltoe.Discovery.Eureka.dll",
+        "lib/netstandard2.0/Steeltoe.Discovery.Eureka.xml",
+        "steeltoe.discovery.eureka.3.2.7.nupkg.sha512",
+        "steeltoe.discovery.eureka.nuspec"
+      ]
+    },
     "Steeltoe.Extensions.Configuration.Abstractions/3.2.7": {
       "sha512": "KBr9B8dUE1QJahEYUzYpPGnf+zIV3VWGfcpt8+k8x92nteZ8NOARWkBhqI4dYNqoAgSsDcm5QuTuFJNxDu43pA==",
       "type": "package",
@@ -2060,6 +2109,26 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Net.Http.Json/3.2.1": {
+      "sha512": "KkevRTwX9uMYxuxG2/wSql8FIAItB89XT36zoh6hraQkFhf2yjotDswpAKzeuaEuMhAia6c50oZMkP1PJoYufQ==",
+      "type": "package",
+      "path": "system.net.http.json/3.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Net.Http.Json.dll",
+        "lib/net461/System.Net.Http.Json.xml",
+        "lib/netstandard2.0/System.Net.Http.Json.dll",
+        "lib/netstandard2.0/System.Net.Http.Json.xml",
+        "system.net.http.json.3.2.1.nupkg.sha512",
+        "system.net.http.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Reflection.MetadataLoadContext/4.6.0": {
       "sha512": "TezS9fEP9kzL5U6GYHZY6I/tqz6qiHKNgAzuT6JJXJXuP+wWvNLN03gPxBK2uLP0LrLg/QXEAF++lxBNBSYILA==",
       "type": "package",
@@ -2192,23 +2261,24 @@
     "net8.0": [
       "Microsoft.AspNetCore.OpenApi >= 8.0.5",
       "Steeltoe.Discovery.ClientCore >= 3.2.7",
+      "Steeltoe.Discovery.Eureka >= 3.2.7",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bernardo\\.nuget\\packages\\": {}
+    "C:\\Users\\bernardo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bernie\\Code\\DemoGatewayArch\\DemoGatewayArch\\RequestService\\RequestService.csproj",
+      "projectUniqueName": "D:\\Code\\DemoGatewayArch\\DemoGatewayArch\\RequestService\\RequestService.csproj",
       "projectName": "RequestService",
-      "projectPath": "D:\\Bernie\\Code\\DemoGatewayArch\\DemoGatewayArch\\RequestService\\RequestService.csproj",
-      "packagesPath": "C:\\Users\\Bernardo\\.nuget\\packages\\",
-      "outputPath": "D:\\Bernie\\Code\\DemoGatewayArch\\DemoGatewayArch\\RequestService\\obj\\",
+      "projectPath": "D:\\Code\\DemoGatewayArch\\DemoGatewayArch\\RequestService\\RequestService.csproj",
+      "packagesPath": "C:\\Users\\bernardo\\.nuget\\packages\\",
+      "outputPath": "D:\\Code\\DemoGatewayArch\\DemoGatewayArch\\RequestService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bernardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bernardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2216,6 +2286,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2247,6 +2318,10 @@
             "target": "Package",
             "version": "[3.2.7, )"
           },
+          "Steeltoe.Discovery.Eureka": {
+            "target": "Package",
+            "version": "[3.2.7, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.4.0, )"
@@ -2271,7 +2346,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

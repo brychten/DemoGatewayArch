@@ -31,3 +31,7 @@
     "BaseUrl": "http://localhost:5194"
   }
 }
+
+
+api-gw.com/api/order -> ip:5202/api/order
+api-gw.com/request -> ip:5260/api/request

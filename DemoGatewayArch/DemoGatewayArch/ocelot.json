@@ -1,25 +1,13 @@
 ﻿{
-  "Routes": [
+  "DynamicRoutes": [
     {
-      "DownstreamPathTemplate": "/api/order",
-      "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/api/order",
-      "UpstreamHttpMethod": ["Get"],
-      "ServiceName": "order-service",
-      "UseServiceDiscovery": true,
-      "LoadBalancerOptions": {
-        "Type": "LeastConnection"
-      }
-    },
-    {
-      "DownstreamPathTemplate": "/api/request",
-      "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/request",
-      "UpstreamHttpMethod": ["Get"],
-      "ServiceName": "request-service",
-      "UseServiceDiscovery": true,
-      "LoadBalancerOptions": {
-        "Type": "LeastConnection"
+      "ServiceName": "order",
+      "RateLimitRule": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "PeriodTimespan": 1000.0,
+        "Limit": 3
       }
     }
   ],
@@ -27,7 +15,8 @@
     "ServiceDiscoveryProvider": {
       "Host": "localhost",
       "Port": 8761,
-      "Type": "Eureka"
+      "Type": "Eureka",
+      "ConfigurationKey": "Eureka"
     }
   }
 }

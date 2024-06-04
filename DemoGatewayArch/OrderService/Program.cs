@@ -1,13 +1,11 @@
 using Steeltoe.Discovery.Client;
+using Steeltoe.Discovery.Eureka;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddServiceDiscovery(o => o.UseEureka());
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddControllers();
-
-// Config Eureka 
-builder.Services.AddDiscoveryClient(builder.Configuration);
 
 
 var app = builder.Build();
@@ -19,10 +17,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.MapControllers();
-
-// Eureka para el autodiscover
-app.UseDiscoveryClient();
-
 
 //app.UseHttpsRedirection();
 

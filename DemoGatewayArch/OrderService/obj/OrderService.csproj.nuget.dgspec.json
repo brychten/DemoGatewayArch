@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Bernie\\Code\\DemoGatewayArch\\DemoGatewayArch\\OrderService\\OrderService.csproj": {}
+    "D:\\Code\\DemoGatewayArch\\DemoGatewayArch\\OrderService\\OrderService.csproj": {}
   },
   "projects": {
-    "D:\\Bernie\\Code\\DemoGatewayArch\\DemoGatewayArch\\OrderService\\OrderService.csproj": {
+    "D:\\Code\\DemoGatewayArch\\DemoGatewayArch\\OrderService\\OrderService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bernie\\Code\\DemoGatewayArch\\DemoGatewayArch\\OrderService\\OrderService.csproj",
+        "projectUniqueName": "D:\\Code\\DemoGatewayArch\\DemoGatewayArch\\OrderService\\OrderService.csproj",
         "projectName": "OrderService",
-        "projectPath": "D:\\Bernie\\Code\\DemoGatewayArch\\DemoGatewayArch\\OrderService\\OrderService.csproj",
-        "packagesPath": "C:\\Users\\Bernardo\\.nuget\\packages\\",
-        "outputPath": "D:\\Bernie\\Code\\DemoGatewayArch\\DemoGatewayArch\\OrderService\\obj\\",
+        "projectPath": "D:\\Code\\DemoGatewayArch\\DemoGatewayArch\\OrderService\\OrderService.csproj",
+        "packagesPath": "C:\\Users\\bernardo\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\DemoGatewayArch\\DemoGatewayArch\\OrderService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bernardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bernardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,11 +50,11 @@
               "target": "Package",
               "version": "[8.0.5, )"
             },
-            "Steeltoe.Discovery.ClientBase": {
+            "Steeltoe.Discovery.ClientCore": {
               "target": "Package",
               "version": "[3.2.7, )"
             },
-            "Steeltoe.Discovery.ClientCore": {
+            "Steeltoe.Discovery.Eureka": {
               "target": "Package",
               "version": "[3.2.7, )"
             },
@@ -81,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
